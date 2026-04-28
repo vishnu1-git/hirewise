@@ -1,0 +1,64 @@
+{
+  "model_name": "XGBoost",
+  "training_samples": 960,
+  "test_samples": 240,
+  "accuracy": 0.9792,
+  "f1_score": 0.9792,
+  "precision": 0.9793,
+  "recall": 0.9792,
+  "cv_scores": [
+    0.9948,
+    0.9948,
+    1.0,
+    0.9948,
+    1.0
+  ],
+  "cv_mean": 0.9969,
+  "confusion_matrix": [
+    [
+      75,
+      1,
+      1
+    ],
+    [
+      1,
+      83,
+      0
+    ],
+    [
+      2,
+      0,
+      77
+    ]
+  ],
+  "feature_importances": {
+    "skills_count": 0.1306,
+    "relevant_skills_count": 0.0767,
+    "experience_years": 0.0499,
+    "project_complexity_score": 0.2453,
+    "education_score": 0.3964,
+    "has_ml_skills": 0.0055,
+    "has_cloud_skills": 0.0015,
+    "has_web_skills": 0.0252,
+    "certifications_count": 0.029,
+    "text_length_score": 0.0398
+  },
+  "classes": [
+    "Average",
+    "Strong",
+    "Weak"
+  ],
+  "trained_at": "2026-04-27T17:51:08.316790",
+  "all_models": {
+    "RandomForest": {
+      "accuracy": 0.9875,
+      "f1_score": 0.9875,
+      "cv_mean": 0.9958
+    },
+    "XGBoost": {
+      "accuracy": 0.9792,
+      "f1_score": 0.9792,
+      "cv_mean": 0.9969
+    }
+  }
+}
